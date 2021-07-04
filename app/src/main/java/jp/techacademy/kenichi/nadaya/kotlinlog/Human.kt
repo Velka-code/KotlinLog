@@ -2,13 +2,11 @@ package jp.techacademy.kenichi.nadaya.kotlinlog
 
 import  android.util.Log
 
-class Human: Animal {
-
-    var hubby: String
+class Human: Animal,Thinkable {
+    val hobby = "〜〜"
 
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int, hubby:String): super(name, age) {
-        this.hubby = hubby
+    constructor(name: String, age: Int): super(name, age) {
     }
 
     // animalクラスのメソッドをオーバライド
@@ -16,7 +14,8 @@ class Human: Animal {
         Log.d("kotlintest", "私の名前は" + this.name + "です。"+"年は" + this.age + "です。")
     }
 
-    fun think(){
-        Log.d("kotlintest", "私は" + this.hubby + "について考える")
+    //Thinkableのインターフェイスのメソッドをオーバーライド
+    override fun think(){
+        Log.d("kotlintest", "私は" + this.hobby + "について考える")
     }
 }

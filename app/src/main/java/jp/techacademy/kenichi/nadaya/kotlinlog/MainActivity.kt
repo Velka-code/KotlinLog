@@ -114,14 +114,13 @@ class MainActivity : AppCompatActivity() {
         dog.move()
  */
 
-        val human = Human("太郎",16,"読書")
+        val human = Human("太郎",16)
         human.say()
         human.think()
 
-        val human2 = Human("次郎",15,"映画")
+        val human2 = Human("次郎",14)
         human2.say()
         human2.think()
-
     }
 /*
     // firstとlast、2つの引数と戻り値の型（int）を指定した関数に修正
