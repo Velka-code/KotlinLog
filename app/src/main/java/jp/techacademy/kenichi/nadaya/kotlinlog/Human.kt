@@ -3,10 +3,11 @@ package jp.techacademy.kenichi.nadaya.kotlinlog
 import  android.util.Log
 
 class Human: Animal,Thinkable {
-    val hobby = "〜〜"
+    var hobby: String
 
     // 引数付きコンストラクタ
     constructor(name: String, age: Int): super(name, age) {
+        this.hobby = "映画"
     }
 
     // animalクラスのメソッドをオーバライド
