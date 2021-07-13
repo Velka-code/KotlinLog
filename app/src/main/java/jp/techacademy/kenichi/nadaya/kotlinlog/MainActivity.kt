@@ -114,11 +114,11 @@ class MainActivity : AppCompatActivity() {
         dog.move()
  */
 
-        val human = Human("太郎",16)
+        val human = Human("太郎",16,"映画")
         human.say()
         human.think()
 
-        val human2 = Human("次郎",14)
+        val human2 = Human("次郎",14,"読書")
         human2.say()
         human2.think()
     }
